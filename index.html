@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<title>My Joint Family</title>
+
+<body>
+    <h1>My Joint Family</h1>
+    <hr>
+    <hr>
+    <img id="Family_12" src="https://i.pinimg.com/originals/5f/8f/d4/5f8fd4ce5d68300a417d2ba3dc85cb21.jpg">
+    <h3 id="one">OUR Joint Family Book</h3>
+    <button type="button" onclick="family()">Next</button>
+    <hr>
+    <script>
+        var names = [
+            "1. My Grandfather{Ramesh Namamal Keswani}",
+            "2. My Grandmother{Seema Keswani}",
+            "3. My Uncle-1{AmitRaj Keswani}",
+            "4. My Aunt-1{Dimple Keswani}",
+            "5. My Father{SumitRaj Keswani}",
+            "6. My Mother{Sonia Keswani}",
+            "7. My Uncle-2{RohitRaj Keswani}",
+            "8. My Aunt-2{Sandhya Keswani}",
+            "9. My big Sister{Shivani Keswani}",
+            "10. Me!{Arya Keswani}",
+            "11. My smaller Sister-1{Shagun Keswani}",
+            "12. My Smaller Brother{Shaurya Keswani}",
+            "13. My Smaller Sister{Aaradhya Keswani} ",
+        ];
+        var images = [
+            "grandfather.png",
+            "Grandma.png",
+            "big uncle.png",
+            "big aunt.png",
+            "Father.png",
+            "mother.png",
+            "Small uncle.png",
+            "small aunt.png",
+            "big sister.png",
+            "me.png",
+            "Shagun.png",
+            "small brother.png",
+            "smallest sister.png"
+        ];
+        var i = 0;
+
+        function family() {
+            document.getElementById("one").innerHTML = names[i];
+            document.getElementById("Family_12").src = images[i];
+
+            i++;
+            if (i==13) {
+                i = 0;
+
+            }
+        }
+    </script>
+</body>
+
+</html>
